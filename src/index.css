@@ -1,9 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 * {
   font-family: "Manrope", sans-serif;
-  background-color: white;
+  /* background-color: white; */
+}
+.gradient-bg {
+  background: linear-gradient(90deg, #4f39f6, #9514fa);
+}
+.gradient-bg:hover {
+  background: linear-gradient(90deg, #9514fa, #4f39f6);
+}
+.gradient-text {
+  background: linear-gradient(90deg, #4f39f6, #9514fa);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background-clip: text;
+  color: transparent;
+}
+.gradient-border {
+  border-image: linear-gradient(90deg, #4f39f6, #9514fa) 1;
 }
