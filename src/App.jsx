@@ -7,6 +7,7 @@ import DigitalTools from './components/digitalTools/DigitalTools'
 import Steps from './components/steps/Steps'
 import Pricing from './components/pricing/Pricing'
 import Workflow from './components/workflow/Workflow'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <Steps></Steps>
     <Pricing></Pricing>
     <Workflow></Workflow>
+    <Footer></Footer>
     </>
   )
 }
