@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 const ProductCard = ({ product, carts, setCarts }) => {
@@ -20,10 +20,10 @@ const ProductCard = ({ product, carts, setCarts }) => {
   };
 
   return (
-    <div className=" shadow-md text-left rounded-2xl flex-1 flex flex-col hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+    <div className=" shadow-md text-left rounded-2xl flex-1 flex flex-col hover:shadow-lg hover:shadow-indigo-400/60 transition duration-300">
       <div className=" pt-12 pb-8 px-8 flex-1 flex flex-col space-y-4 relative ">
         <div
-          className={`badge absolute top-4 right-4 px-4 py-3 rounded-full text-sm font-semibold 
+          className={`badge absolute top-4 right-4 px-4 py-3 rounded-full text-sm font-semibold hover:-translate-y-0.5 active:scale-90 duration-300
                 ${product.tagType === "Best Seller" && "bg-yellow-100 text-yellow-600"}
                 ${product.tagType === "Popular" && "bg-purple-100 text-purple-600"}
                 ${product.tagType === "New" && "bg-green-100 text-green-600"}
@@ -32,9 +32,10 @@ const ProductCard = ({ product, carts, setCarts }) => {
         >
           {product.tagType ? product.tagType : "Default"}
         </div>
-        <div className=" w-12 h-12 p-2 border border-gray-100 rounded-full flex items-center justify-center">
+        <div className=" w-12 h-12 p-2 border border-gray-100 rounded-full flex items-center justify-center ">
           <img src={product.icon} alt="" />
         </div>
+        
         <h2 className="text-2xl font-bold mb-1">{product.name}</h2>
         <p className="text-black/80 line-clamp-2">{product.description}</p>
 

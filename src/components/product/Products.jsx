@@ -6,7 +6,7 @@ const Products = ({ productsPromise, carts, setCarts }) => {
 
   return (
     <div className="my-20">
-      <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:15 xl:gap-20">
+      <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15 xl:gap-20">
         {products.map((product) => (
           <ProductCard
             key={product.id}

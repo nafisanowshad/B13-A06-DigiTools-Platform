@@ -1,16 +1,27 @@
-# React + Vite
+🚀 DigiTools Platform - Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern, high-performance web application designed for users to explore and purchase premium digital assets, AI tools, and software kits. Built with a focus on seamless UX, the platform features dynamic product toggling, a functional cart system, and interactive UI components.
 
-Currently, two official plugins are available:
+🔗Live Link 
+https://b-13-digitools-platform.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🛠️ Technologies Used
+Frontend: React.js (Functional Components, Hooks)
+Styling: Tailwind CSS, DaisyUI (Glassmorphism & Responsive Design)
+Language: JavaScript (ES6+)
+Notifications: React-Toastify
+Data Management: JSON-based API
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Key Features
+1. Dynamic Product & Cart Toggling
+The main dashboard features a central toggle system. Users can switch between the Product section and their Personal Cart without page reloads. The Cart dynamically updates to show an "Empty" state or a list of selected tools.
+2. Interactive Shopping Experience
+Real-time Cart Tracking: Clicking "Buy Now" instantly updates the Navbar cart count.
+Smart Notifications: Integrated react-toastify for elegant alerts when adding items, removing items, or checking out.
+Visual Feedback: Buttons transform to show "Added to cart" states and feature smooth hover animations.
+3. Fully Responsive & Feature-Rich Cards
+Each product card is designed with a 3-column layout (mobile-optimized) displaying:
+Dynamic Tags: Labels for "Best Seller," "New," and "Popular."
+Flexible Pricing: Supports One-Time, Monthly, and Yearly subscription models.
+Feature Lists: Bulleted capabilities specific to each digital tool.
+                        
