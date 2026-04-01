@@ -10,7 +10,7 @@ const Banner = () => {
           <img
             src={bannerImage}
             alt="banner"
-            className=" rounded-lg shadow-md"
+            className=" rounded-lg shadow-md hover:-translate-y-0.5"
           />
         </div>
         <div className="flex-1 space-y-2 flex flex-col items-center lg:items-start text-center lg:text-left">
