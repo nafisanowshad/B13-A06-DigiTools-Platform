@@ -1,18 +1,18 @@
-🚀 DigiTools Platform - Digital Tools Buying Website
+🚀 **DigiTools Platform - Digital Tools Buying Website**
 
 DigiTools is a modern, high-performance web application designed for users to explore and purchase premium digital assets, AI tools, and software kits. Built with a focus on seamless UX, the platform features dynamic product toggling, a functional cart system, and interactive UI components.
 
-🔗Live Link 
+🔗 **Live Link** 
 https://b-13-digitools-platform.netlify.app/
 
-🛠️ Technologies Used
+🛠️ **Technologies Used**
 Frontend: React.js (Functional Components, Hooks)
 Styling: Tailwind CSS, DaisyUI (Glassmorphism & Responsive Design)
 Language: JavaScript (ES6+)
 Notifications: React-Toastify
 Data Management: JSON-based API
 
-✨ Key Features
+✨ **Key Features**
 1. Dynamic Product & Cart Toggling
 The main dashboard features a central toggle system. Users can switch between the Product section and their Personal Cart without page reloads. The Cart dynamically updates to show an "Empty" state or a list of selected tools.
 2. Interactive Shopping Experience
