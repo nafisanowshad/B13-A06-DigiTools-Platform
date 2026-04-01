@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-[#101727] text-white">
       <div className="container mx-auto">
-        <div className="footer  sm:footer-horizontal   p-10 py-20">
+        <div className="footer  sm:footer-horizontal p-10 py-20">
           <aside>
             <h1 className="font-bold text-3xl md:text-5xl">DigiTools</h1>
             <p className="text-white/70 mt-5">
@@ -22,8 +22,8 @@ const Footer = () => {
             <h6 className="text-lg text-white">Product</h6>
             <a className="link link-hover text-white/70">Features</a>
             <a className="link link-hover text-white/70">Pricing</a>
-            <a className="link link-hover text-white/70">Pricing</a>
-            <a className="link link-hover text-white/70">Pricing</a>
+            <a className="link link-hover text-white/70">Templates</a>
+            <a className="link link-hover text-white/70">Integrations</a>
           </nav>
           <nav>
             <h6 className="text-lg text-white">Company</h6>
