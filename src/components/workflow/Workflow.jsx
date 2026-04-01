@@ -13,12 +13,12 @@ const Workflow = () => {
           Start your free trial today.
         </p>
         <div className="flex flex-col md:flex-row items-center gap-4 mt-5">
-          <button className="btn border-none font-normal shadow-none rounded-full hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+          <button className="btn border-none font-normal shadow-none rounded-full hover:shadow-lg hover:shadow-indigo-400/50 transition hover:-translate-y-1 active:scale-95 duration-300">
             <h1 className="gradient-text ">
               Explore Products
             </h1>
           </button>
-          <button className="btn bg-transparent shadow-none border font-normal border-white rounded-full text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+          <button className="btn bg-transparent shadow-none border font-normal border-white rounded-full text-white hover:shadow-lg hover:shadow-indigo-400/50 transition hover:-translate-y-1 active:scale-95 duration-300">
             View Pricing
           </button>
         </div>

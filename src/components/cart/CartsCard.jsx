@@ -23,7 +23,7 @@ const CartsCard = ({ cart, carts, setCarts }) => {
       </div>
 
       <div>
-        <button onClick={handleRemove} className=" btn border-none shadow-none bg-transparent text-red-600 hover:btn rounded-2xl hover:bg-white  hover:shadow-lg hover:shadow-indigo-400/50 transition duration-500">remove</button>
+        <button onClick={handleRemove} className=" btn border-none shadow-none bg-transparent text-red-600 hover:btn rounded-2xl hover:bg-white  hover:shadow-lg hover:shadow-indigo-400/50 transition hover:-translate-y-1 active:scale-95 duration-500">remove</button>
       </div>
     </div>
   );

@@ -86,8 +86,10 @@ const NavBar = ({carts}) => {
 
             <p className="font-semibold text-black/80">Login</p>
 
-            <a className="btn rounded-full gradient-bg text-white hidden sm:flex hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
-              Get Started
+            <a className="btn rounded-full gradient-bg text-white hidden sm:flex 
+              transition duration-300 ease-in-out
+              hover:shadow-lg hover:shadow-indigo-400/50 
+              hover:-translate-y-1 active:scale-90">Get Started
             </a>
           </div>
         </div>

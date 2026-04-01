@@ -61,7 +61,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
 
         <button
           onClick={handleBuyNow}
-          className={`w-full text-white mt-auto btn  rounded-full hover:shadow-lg  transition duration-300 ${isAddToCart ? "btn-success bg-linear-to-r from-green-300 to-green-500 hover:shadow-green-400/50  " : "btn-primary gradient-bg  hover:shadow-indigo-400/50 "}`}
+          className={`w-full text-white mt-auto btn  rounded-full hover:shadow-lg  transition hover:-translate-y-1 active:scale-95 duration-300 ${isAddToCart ? "btn-success bg-linear-to-r from-green-300 to-green-500 hover:shadow-green-400/50  " : "btn-primary gradient-bg  hover:shadow-indigo-400/50 "}`}
         >
           {isAddToCart ? "Added to cart" : "Buy Now"}
         </button>

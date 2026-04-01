@@ -19,7 +19,7 @@ const DigitalTools = ({activeTab ,setActiveTab , carts}) => {
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab px-8   border-l-2 border-gray-200 rounded-full  ${activeTab === "product" && " border-none  gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
+          className={`tab px-8   border-l-2 border-gray-200 rounded-full  ${activeTab === "product" && " border-none  gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 hover:-translate-y-1 active:scale-95 transition duration-300"}`}
           aria-label="Products"
           onClick={() => setActiveTab("product")}
           defaultChecked
@@ -27,7 +27,7 @@ const DigitalTools = ({activeTab ,setActiveTab , carts}) => {
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab px-8 border-r-2 border-gray-200 rounded-full  ${activeTab === "cart" && " border-none gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
+          className={`tab px-8 border-r-2 border-gray-200 rounded-full  ${activeTab === "cart" && " border-none gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 hover:-translate-y-1 active:scale-95 transition duration-300"}`}
           aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />

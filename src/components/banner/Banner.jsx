@@ -1,6 +1,6 @@
 import React from "react";
 import bannerImage from "../../assets/banner.png";
-import playImage from "../../assets/Play.png";
+import playImg from "../../assets/Play.png";
 
 const Banner = () => {
   return (
@@ -37,13 +37,13 @@ const Banner = () => {
             Explore Products
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="btn text-white btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+            <button className="btn text-white btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300 hover:-translate-y-1 active:scale-95">
               Explore Products
             </button>
             <button className="btn bg-transparent border-none p-0 ">
-              <div className="p-0.5 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:shadow-xl hover:shadow-indigo-400/50 transition duration-300">
+              <div className="p-0.5 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:shadow-xl hover:shadow-indigo-400/50 transition duration-300 hover:-translate-y-1 active:scale-95">
                 <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-full">
-                  <img  src={playImage} alt="video play icon" />
+                  <img  src={playImg} alt="video play icon" />
                   <span className="gradient-text ">Watch Demo</span>
                 </div>
               </div>

@@ -1,9 +1,9 @@
 import { Check } from "lucide-react";
-import React from 'react';
+import React from "react";
 
 const Pricing = () => {
-    return (
-        <div className="py-30 px-5">
+  return (
+    <div className="py-30 px-5">
       <div className="container mx-auto text-center ">
         <h1 className=" text-3xl md:text-4xl lg:text-6xl font-extrabold leading-normal">
           Simple, Transparent Pricing
@@ -13,7 +13,6 @@ const Pricing = () => {
         </p>
 
         <div className="py-10 grid md:grid-cols-2 lg:grid-cols-3 px-5 gap-10 lg:20 xl:gap-25">
-            
           <div className=" bg-gray-100 shadow-md text-left rounded-2xl flex-1 flex flex-col hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
             <div className=" pt-12 pb-8 px-8 flex-1 flex flex-col">
               <h2 className="text-3xl font-bold mb-1">Starter</h2>
@@ -43,7 +42,7 @@ const Pricing = () => {
                 </li>
               </ul>
 
-              <button className="w-full text-white mt-auto btn btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+              <button className="w-full text-white mt-auto btn btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition hover:-translate-y-1 active:scale-95 duration-300">
                 Get Started Free
               </button>
             </div>
@@ -93,7 +92,7 @@ const Pricing = () => {
                 </li>
               </ul>
 
-              <button className="w-full mt-auto bg-white  font-semibold py-4 rounded-full btn border-none  shadow-none hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+              <button className="w-full mt-auto bg-white  font-semibold py-4 rounded-full btn border-none  shadow-none hover:shadow-lg hover:shadow-indigo-400/50  hover:-translate-y-1 active:scale-95 transition duration-300">
                 <h1 className="gradient-text ">Start Pro Trial</h1>
               </button>
             </div>
@@ -136,7 +135,7 @@ const Pricing = () => {
                 </li>
               </ul>
 
-              <button className="w-full text-white mt-auto btn btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
+              <button className="w-full text-white mt-auto btn btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition hover:-translate-y-1 active:scale-95 duration-300">
                 Contact Sales
               </button>
             </div>
@@ -144,7 +143,7 @@ const Pricing = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Pricing;

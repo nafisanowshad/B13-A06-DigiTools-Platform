@@ -5,14 +5,12 @@ import { toast } from "react-toastify";
 const Carts = ({ carts, setCarts }) => {
   // console.log(carts);
 
-  const totalPrice = carts.reduce ((sum , cart ) => (sum + cart.price ), 0)
+  const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0);
 
   const handleToProceed = () => {
-
-    setCarts([])
-   toast.success("Payment Successful!");
-  }
-
+    setCarts([]);
+    toast.success("Payment Successful!");
+  };
 
   return (
     <div className="container mx-auto my-12 px-5">
@@ -38,9 +36,14 @@ const Carts = ({ carts, setCarts }) => {
               </h1>
               <div className="space-y-5 py-5 mt-10">
                 {/* cards here */}
-                {
-                    carts.map(cart => <CartsCard key={cart.id} cart={cart} carts={carts} setCarts={setCarts} />)
-                }
+                {carts.map((cart) => (
+                  <CartsCard
+                    key={cart.id}
+                    cart={cart}
+                    carts={carts}
+                    setCarts={setCarts}
+                  />
+                ))}
               </div>
             </div>
             <div className="flex justify-between items-center mb-8">
@@ -49,18 +52,14 @@ const Carts = ({ carts, setCarts }) => {
               </h2>
               <div className="text-right">
                 <p className="text-4xl md:text-5xl font-bold text-gray-900 ">
-                  ${totalPrice.toFixed(2)} 
+                  ${totalPrice.toFixed(2)}
                 </p>
               </div>
             </div>
 
             <button
-              className="w-full gradient-bg  hover:shadow-indigo-400/50
-                     transition-all duration-300 active:scale-[0.985] text-white text-xl md:text-2xl 
-                     font-semibold py-5 rounded-2xl shadow-lg shadow-red-purple/30 
-                     hover:shadow-lg "
-
-                     onClick={handleToProceed}
+              className="w-full gradient-bg  hover:shadow-indigo-400/50 hover:-translate-y-1 active:scale-95 transition-all duration-300 active:scale-[0.985] text-white text-xl md:text-2xl font-semibold py-5 rounded-2xl shadow-lg shadow-red-purple/30 hover:shadow-lg "
+              onClick={handleToProceed}
             >
               Proceed to Checkout
             </button>
