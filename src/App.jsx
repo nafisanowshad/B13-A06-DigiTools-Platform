@@ -1,4 +1,4 @@
-import {useState, Suspense} from 'react'
+import {useState} from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Banner from './components/banner/Banner'
@@ -10,6 +10,8 @@ import Workflow from './components/workflow/Workflow'
 import Footer from './components/footer/Footer'
 import Products from './components/product/Products'
 import Carts from './components/cart/Carts'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const fetchProductsData = async () => {
   const res = await fetch("/data.json");
@@ -26,6 +28,7 @@ function App() {
     <>
     <Navbar carts={carts}></Navbar>
     <Banner></Banner>
+    <ToastContainer position="top-right" autoClose={2000} />
     <StatsSection></StatsSection>
     <DigitalTools
       activeTab={activeTab}
@@ -33,21 +36,7 @@ function App() {
       carts={carts}
     ></DigitalTools>
 
-      {activeTab === "product" ? (
-        // <Suspense
-        //   fallback={
-        //     <div className="flex justify-center items-center h-[50vh]">
-        //       <span className="loading loading-spinner text-primary"></span>
-        //     </div>
-        //   }
-        // >
-        //   <Products
-        //     productsPromise={productsPromise}
-        //     carts={carts}
-        //     setCarts={setCarts}
-        //   />
-        // </Suspense>
-
+    {activeTab === "product" ? (
     <Products
       productsPromise={productsPromise}
       carts={carts}
